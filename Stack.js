@@ -1,7 +1,7 @@
 class Stack {
     constructor() {
         this.top = null;
-        this.bottom = null;
+        // this.bottom = null;
         this.length = 0;
     }
 
@@ -10,7 +10,7 @@ class Stack {
 
         if (!this.top) {
             this.top = node;
-            this.bottom = node;
+            // this.bottom = node;
         } else {
             let origTop = this.top;
             this.top = node;
@@ -23,7 +23,7 @@ class Stack {
         let origTop = this.top;
         if (this.length == 1) {
             this.top = null;
-            this.bottom = null;
+            // this.bottom = null;
         } else {
             this.top = this.top.next;
         }
