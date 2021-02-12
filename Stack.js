@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=2ge--J59WrI&list=PLeLwVYBodOL0npQy3bHOOAGH-6Uf-HY2d&index=21
+
 class Stack {
     constructor() {
         this.top = null;
@@ -20,7 +22,7 @@ class Stack {
     }
 
     pop() {
-        let origTop = this.top;
+        const origTop = this.top;
         if (this.length == 1) {
             this.top = null;
             // this.bottom = null;

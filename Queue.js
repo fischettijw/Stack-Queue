@@ -8,12 +8,33 @@ class Queue {
     }
 
     peek() {
-
+        if (!this.first) {
+            return null;
+        }
+        return this.first;
     }
 
     enqueue(data) {
-
+        const node = new Node(data);
+        if (!this.first) {
+            this.first = node;
+            this.last = node;
+        } else {
+            this.last.next = node;
+            this.last = node;
+        }
+        this.length++;
     }
 
-
+    dequeue() {
+        const oldFirst = this.first;
+        if (this.first == this.last) {
+            this.first = null;
+            this.last = null;
+        } else {
+            this.first = this.first.next;
+        }
+        this.length--;
+        return oldFirst;
+    }
 }
