@@ -3,7 +3,7 @@
 // for (let i = 1; i < 5; i++) {
 //     stack.push(`Node: ${i}`)
 // }
-// stack.push({ 'joe': 'john' });
+// stack.push([1, 2, 3, 4, 5, 6, 7]);
 // console.log(stack);
 
 // let p = stack.pop();
@@ -19,6 +19,9 @@
 // stack.push("4rd Node");
 // console.log(stack);
 // // console.log(pk, stack);
+
+
+
 
 const queue = new Queue();
 queue.enqueue('First in line');
