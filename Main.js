@@ -21,9 +21,10 @@
 // // console.log(pk, stack);
 
 
-
+// console.trace();
 
 const queue = new Queue();
+
 queue.enqueue('First in line');
 console.log(queue);
 queue.enqueue('Second in line');
@@ -32,6 +33,7 @@ queue.enqueue('Third in line');
 console.log(queue);
 queue.enqueue('Forth in line');
 console.log(queue);
+console.table(queue);
 queue.dequeue();
 queue.dequeue();
 queue.dequeue();
